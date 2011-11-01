@@ -109,17 +109,6 @@
 			</properties>
 		</profile>
 		<profile>
-			<id>cargo-deploy-version</id>
-			<activation>
-				<property>
-					<name>env.CARGO_DEPLOY_VERSION</name>
-				</property>
-			</activation>
-			<properties>
-				<cargo.deploy.version>${env.CARGO_DEPLOY_VERSION}</cargo.deploy.version>
-			</properties>
-		</profile>
-		<profile>
 			<id>cargo-deploy-context</id>
 			<activation>
 				<property>
