@@ -105,6 +105,17 @@
 			</activation>
 			<properties>
 				<cargo.deploy.artifactId>${env.CARGO_DEPLOY_ARTIFACTID}</cargo.deploy.artifactId>
+			</properties>
+		</profile>
+		<profile>
+			<id>cargo-deploy-useArtifactName</id>
+			<activation>
+				<property>
+					<name>env.CARGO_DEPLOY_USEARTIFACTNAME</name>
+					<value>true</value>
+				</property>
+			</activation>
+			<properties>
 				<cargo.deploy.context>${env.CARGO_DEPLOY_ARTIFACTID}</cargo.deploy.context>
 			</properties>
 		</profile>
