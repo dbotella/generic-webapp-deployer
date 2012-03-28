@@ -16,6 +16,14 @@
 			<id>nexus</id>
 			<name>CIDA Nexus</name>
 			<url>${cida.maven.url}/content/groups/public/</url>
+			<snapshots>
+				<enabled/>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+			<releases>
+				<enabled/>
+				<updatePolicy>always</updatePolicy>
+			</releases>
 		</repository>
 	</repositories>
 
